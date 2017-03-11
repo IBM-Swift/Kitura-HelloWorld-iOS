@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lob-Kf-B05">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Kitura-->
+        <scene sceneID="Myn-86-kXF">
+            <objects>
+                <tableViewController id="Uti-bB-jYu" customClass="KituraTableViewController" customModule="ClientSide" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="JtO-28-b63">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="OWM-Vb-dch">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="190" id="YKO-dw-XgH">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YKO-dw-XgH" id="KD0-Cy-N6G">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="189"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kitura Mobile Server" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Wf-l8-baF">
+                                                    <rect key="frame" x="96.5" y="29" width="182" height="27"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kitura" translatesAutoresizingMaskIntoConstraints="NO" id="onE-Kf-Cvh">
+                                                    <rect key="frame" x="134" y="64" width="107" height="75"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="75" id="R6x-Bb-64O"/>
+                                                        <constraint firstAttribute="width" constant="107" id="gVk-Ec-wRe"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="tintColor" red="0.95877832590000001" green="0.95835998560000002" blue="0.96982353929999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="1Wf-l8-baF" firstAttribute="centerX" secondItem="KD0-Cy-N6G" secondAttribute="centerX" id="1If-Ob-SQK"/>
+                                                <constraint firstItem="onE-Kf-Cvh" firstAttribute="top" secondItem="1Wf-l8-baF" secondAttribute="bottom" constant="8" id="HQI-bf-bcE"/>
+                                                <constraint firstItem="1Wf-l8-baF" firstAttribute="top" secondItem="KD0-Cy-N6G" secondAttribute="topMargin" constant="21" id="Tc9-nK-hL5"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="onE-Kf-Cvh" secondAttribute="bottom" constant="42.5" id="V8l-fA-i3D"/>
+                                                <constraint firstItem="onE-Kf-Cvh" firstAttribute="top" secondItem="KD0-Cy-N6G" secondAttribute="topMargin" constant="56" id="XP1-Pp-PNQ"/>
+                                                <constraint firstItem="onE-Kf-Cvh" firstAttribute="centerX" secondItem="KD0-Cy-N6G" secondAttribute="centerX" id="gep-Ub-c6E"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.12549019607843137" green="0.57647058823529407" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="70" id="5f5-rT-WZR">
+                                        <rect key="frame" x="0.0" y="190" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5f5-rT-WZR" id="dQY-Es-v0F">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STOPPED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGO-Gy-U5P">
+                                                    <rect key="frame" x="8" y="13" width="116" height="43"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Xmm-Co-SbN">
+                                                    <rect key="frame" x="318" y="19" width="51" height="31"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <color key="tintColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="onTintColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="statusChanged:" destination="Uti-bB-jYu" eventType="valueChanged" id="dIQ-xH-MhO"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DGO-Gy-U5P" firstAttribute="top" secondItem="dQY-Es-v0F" secondAttribute="topMargin" constant="5" id="5wd-oF-5kP"/>
+                                                <constraint firstItem="Xmm-Co-SbN" firstAttribute="leading" secondItem="DGO-Gy-U5P" secondAttribute="trailing" constant="194" id="b2h-GK-NeG"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Xmm-Co-SbN" secondAttribute="trailing" id="ez0-O9-7FL"/>
+                                                <constraint firstItem="Xmm-Co-SbN" firstAttribute="top" secondItem="dQY-Es-v0F" secondAttribute="topMargin" constant="11" id="nkN-tZ-9k2"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Xmm-Co-SbN" secondAttribute="bottom" constant="11" id="o6H-Qd-4vf"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="DGO-Gy-U5P" secondAttribute="leading" id="ymp-ep-iRv"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="DGO-Gy-U5P" secondAttribute="bottom" constant="5" id="zPK-2g-KFy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="170" id="o7i-Qf-0mC">
+                                        <rect key="frame" x="0.0" y="260" width="375" height="170"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o7i-Qf-0mC" id="LOW-2b-IpB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect your client" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyK-Km-87V">
+                                                    <rect key="frame" x="8" y="8" width="196" height="32"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                                    <color key="textColor" red="0.12549019607843137" green="0.57647058823529407" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0.0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mag-ib-wKr">
+                                                    <rect key="frame" x="8" y="48" width="196" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="uT3-Vn-YBf"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vXQ-af-fPn">
+                                                    <rect key="frame" x="225" y="14" width="120" height="120"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="120" id="JbI-J7-266"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="vXQ-af-fPn" secondAttribute="bottom" constant="27" id="0ER-ry-W9D"/>
+                                                <constraint firstItem="CyK-Km-87V" firstAttribute="leading" secondItem="mag-ib-wKr" secondAttribute="leading" id="7b4-kw-PGU"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="mag-ib-wKr" secondAttribute="bottom" constant="92" id="7jo-qN-w7o"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="vXQ-af-fPn" secondAttribute="trailing" constant="22" id="9vj-qJ-GbS"/>
+                                                <constraint firstItem="vXQ-af-fPn" firstAttribute="top" secondItem="LOW-2b-IpB" secondAttribute="topMargin" constant="6" id="KI0-q0-GyF"/>
+                                                <constraint firstItem="vXQ-af-fPn" firstAttribute="leading" secondItem="CyK-Km-87V" secondAttribute="trailing" constant="21" id="LBF-gd-FPU"/>
+                                                <constraint firstItem="CyK-Km-87V" firstAttribute="leading" secondItem="LOW-2b-IpB" secondAttribute="leadingMargin" id="Waw-B6-jaL"/>
+                                                <constraint firstItem="vXQ-af-fPn" firstAttribute="leading" secondItem="mag-ib-wKr" secondAttribute="trailing" constant="21" id="eXG-Ai-PU2"/>
+                                                <constraint firstItem="CyK-Km-87V" firstAttribute="top" secondItem="LOW-2b-IpB" secondAttribute="topMargin" id="ntS-ej-kOR"/>
+                                                <constraint firstItem="mag-ib-wKr" firstAttribute="top" secondItem="CyK-Km-87V" secondAttribute="bottom" constant="8" symbolic="YES" id="zfJ-wI-8Vi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="35" id="nkn-RA-uul">
+                                        <rect key="frame" x="0.0" y="430" width="375" height="35"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nkn-RA-uul" id="PKG-mU-wDa">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="34"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrm-dm-ddw">
+                                                    <rect key="frame" x="8" y="8" width="87" height="29"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="87" id="Ikb-jI-WyA"/>
+                                                        <constraint firstAttribute="height" constant="29" id="w6h-tz-3kt"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="textColor" red="0.12549019607843137" green="0.57647058823529407" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="yrm-dm-ddw" firstAttribute="top" secondItem="PKG-mU-wDa" secondAttribute="topMargin" id="GNL-ha-C2h"/>
+                                                <constraint firstItem="yrm-dm-ddw" firstAttribute="leading" secondItem="PKG-mU-wDa" secondAttribute="leadingMargin" id="i29-bI-SG7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                        </accessibility>
+                                        <connections>
+                                            <segue destination="SgV-KY-bHF" kind="show" identifier="ShowLog" id="oek-Bp-21c"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="145" id="IAF-9L-xdh">
+                                        <rect key="frame" x="0.0" y="465" width="375" height="145"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IAF-9L-xdh" id="Rsd-mY-Yo0">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="144"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Kitura IOS App Started!" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bf1-Qm-VzU">
+                                                    <rect key="frame" x="8" y="23" width="359" height="98"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Bf1-Qm-VzU" secondAttribute="trailing" id="1we-XJ-t9Q"/>
+                                                <constraint firstItem="Bf1-Qm-VzU" firstAttribute="top" secondItem="Rsd-mY-Yo0" secondAttribute="topMargin" constant="15" id="qKK-jN-vV9"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="Bf1-Qm-VzU" secondAttribute="leading" id="wF7-rf-z6O"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Bf1-Qm-VzU" secondAttribute="bottom" constant="15" id="yja-qb-Vhe"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                        </accessibility>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Uti-bB-jYu" id="Xch-Q3-b2O"/>
+                            <outlet property="delegate" destination="Uti-bB-jYu" id="5uv-KO-5IM"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Kitura" id="Bbw-YT-zIF"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="imageQRCode" destination="vXQ-af-fPn" id="PLO-Dp-4vB"/>
+                        <outlet property="ipLabel" destination="mag-ib-wKr" id="6R8-Ab-Ldm"/>
+                        <outlet property="kituraOutputTextView" destination="Bf1-Qm-VzU" id="7Yd-mb-maU"/>
+                        <outlet property="kituraSwitch" destination="Xmm-Co-SbN" id="x3M-yn-zvJ"/>
+                        <outlet property="statusCell" destination="5f5-rT-WZR" id="iav-Q3-WCT"/>
+                        <outlet property="statusLabel" destination="DGO-Gy-U5P" id="brq-bW-hLp"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NzH-h8-zfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5661.6000000000004" y="168.6656671664168"/>
+        </scene>
+        <!--Log-->
+        <scene sceneID="ySf-tl-kVL">
+            <objects>
+                <viewController storyboardIdentifier="LogView" id="SgV-KY-bHF" customClass="LogViewController" customModule="ClientSide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pdI-BT-xFT"/>
+                        <viewControllerLayoutGuide type="bottom" id="H8V-cD-2Zu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3uL-Ph-KRd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Kitura IOS App started!" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wL-67-TpY">
+                                <rect key="frame" x="16" y="28" width="343" height="619"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5wL-67-TpY" firstAttribute="top" secondItem="pdI-BT-xFT" secondAttribute="bottom" constant="8" id="Xzf-Ql-0My"/>
+                            <constraint firstItem="H8V-cD-2Zu" firstAttribute="top" secondItem="5wL-67-TpY" secondAttribute="bottom" constant="20" id="hJw-bu-bW5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5wL-67-TpY" secondAttribute="trailing" id="i4l-nu-6Nq"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="5wL-67-TpY" secondAttribute="leading" id="nVj-ic-Mrp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Log" id="zIl-K7-1Qx"/>
+                    <connections>
+                        <outlet property="logTextView" destination="5wL-67-TpY" id="9jl-wQ-ttr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SQb-kL-jKf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6868" y="183"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6b7-gb-RAH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lob-Kf-B05" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SPZ-Yd-NGA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Uti-bB-jYu" kind="relationship" relationship="rootViewController" id="Bnf-pl-x82"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lIL-RJ-JVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4722.3999999999996" y="168.6656671664168"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Kitura" width="214" height="147"/>
+    </resources>
+</document>

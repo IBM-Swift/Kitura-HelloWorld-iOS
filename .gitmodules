@@ -1,0 +1,7 @@
+[submodule "Builder"]
+	path = Builder
+	url = https://github.com/IBM-Swift/Kitura-Builder-iOS
+[submodule "ServerSide"]
+	path = ServerSide
+	url = https://github.com/IBM-Swift/kitura-helloworld.git
+	branch = two_modules

@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC26755D1E714D4800915F42 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC26755C1E714D4800915F42 /* Log.swift */; };
+		DC26755F1E714DAC00915F42 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC26755E1E714DAC00915F42 /* Colors.swift */; };
+		DC2675611E714E2000915F42 /* TextViewOutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2675601E714E2000915F42 /* TextViewOutputStream.swift */; };
+		DC5080221E30CC5200A73889 /* KituraViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5080211E30CC5200A73889 /* KituraViewControllerTests.swift */; };
+		DC655F8B1E6EA81100B15995 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC655F8A1E6EA81100B15995 /* LogViewController.swift */; };
+		DC79191E1E6D790F004AA9B5 /* KituraTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC79191D1E6D790F004AA9B5 /* KituraTableViewController.swift */; };
+		DCD2FD7E1D98FC230062421A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD2FD7D1D98FC230062421A /* AppDelegate.swift */; };
+		DCD2FD831D98FC230062421A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD2FD811D98FC230062421A /* Main.storyboard */; };
+		DCD2FD851D98FC230062421A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD2FD841D98FC230062421A /* Assets.xcassets */; };
+		DCD2FD881D98FC230062421A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD2FD861D98FC230062421A /* LaunchScreen.storyboard */; };
+		DCD2FD9E1D98FC230062421A /* KituraiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD2FD9D1D98FC230062421A /* KituraiOSUITests.swift */; };
+		DCD2FDAC1D9901CB0062421A /* IPUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD2FDAB1D9901CB0062421A /* IPUtility.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCD2FD8F1D98FC230062421A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD2FD721D98FC230062421A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCD2FD791D98FC230062421A;
+			remoteInfo = KituraiOS;
+		};
+		DCD2FD9A1D98FC230062421A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD2FD721D98FC230062421A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCD2FD791D98FC230062421A;
+			remoteInfo = KituraiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC26755C1E714D4800915F42 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		DC26755E1E714DAC00915F42 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		DC2675601E714E2000915F42 /* TextViewOutputStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewOutputStream.swift; sourceTree = "<group>"; };
+		DC5080211E30CC5200A73889 /* KituraViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KituraViewControllerTests.swift; sourceTree = "<group>"; };
+		DC655F8A1E6EA81100B15995 /* LogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		DC79191D1E6D790F004AA9B5 /* KituraTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KituraTableViewController.swift; sourceTree = "<group>"; };
+		DCD2FD7A1D98FC230062421A /* ClientSide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClientSide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD2FD7D1D98FC230062421A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCD2FD821D98FC230062421A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCD2FD841D98FC230062421A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCD2FD871D98FC230062421A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCD2FD891D98FC230062421A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCD2FD8E1D98FC230062421A /* ClientSideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ClientSideTests.xctest; path = ClientSide.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD2FD941D98FC230062421A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCD2FD991D98FC230062421A /* ClientSideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ClientSideUITests.xctest; path = ClientSide.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD2FD9D1D98FC230062421A /* KituraiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KituraiOSUITests.swift; sourceTree = "<group>"; };
+		DCD2FD9F1D98FC230062421A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCD2FDAB1D9901CB0062421A /* IPUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPUtility.swift; sourceTree = "<group>"; };
+		DCD2FDAD1D99073B0062421A /* KituraiOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KituraiOS-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCD2FD771D98FC230062421A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD2FD8B1D98FC230062421A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD2FD961D98FC230062421A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5898C0D1E61644200F98B09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCD2FD711D98FC230062421A = {
+			isa = PBXGroup;
+			children = (
+				D5898C0D1E61644200F98B09 /* Frameworks */,
+				DCD2FD7C1D98FC230062421A /* KituraiOS */,
+				DCD2FD911D98FC230062421A /* KituraiOSTests */,
+				DCD2FD9C1D98FC230062421A /* KituraiOSUITests */,
+				DCD2FD7B1D98FC230062421A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCD2FD7B1D98FC230062421A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCD2FD7A1D98FC230062421A /* ClientSide.app */,
+				DCD2FD8E1D98FC230062421A /* ClientSideTests.xctest */,
+				DCD2FD991D98FC230062421A /* ClientSideUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCD2FD7C1D98FC230062421A /* KituraiOS */ = {
+			isa = PBXGroup;
+			children = (
+				DCD2FD7D1D98FC230062421A /* AppDelegate.swift */,
+				DCD2FDAB1D9901CB0062421A /* IPUtility.swift */,
+				DCD2FDAD1D99073B0062421A /* KituraiOS-Bridging-Header.h */,
+				DC26755C1E714D4800915F42 /* Log.swift */,
+				DCD2FD811D98FC230062421A /* Main.storyboard */,
+				DC655F8A1E6EA81100B15995 /* LogViewController.swift */,
+				DC79191D1E6D790F004AA9B5 /* KituraTableViewController.swift */,
+				DC2675601E714E2000915F42 /* TextViewOutputStream.swift */,
+				DC26755E1E714DAC00915F42 /* Colors.swift */,
+				DCD2FD841D98FC230062421A /* Assets.xcassets */,
+				DCD2FD861D98FC230062421A /* LaunchScreen.storyboard */,
+				DCD2FD891D98FC230062421A /* Info.plist */,
+			);
+			path = KituraiOS;
+			sourceTree = "<group>";
+		};
+		DCD2FD911D98FC230062421A /* KituraiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCD2FD941D98FC230062421A /* Info.plist */,
+				DC5080211E30CC5200A73889 /* KituraViewControllerTests.swift */,
+			);
+			path = KituraiOSTests;
+			sourceTree = "<group>";
+		};
+		DCD2FD9C1D98FC230062421A /* KituraiOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DCD2FD9D1D98FC230062421A /* KituraiOSUITests.swift */,
+				DCD2FD9F1D98FC230062421A /* Info.plist */,
+			);
+			path = KituraiOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCD2FD791D98FC230062421A /* ClientSide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD2FDA21D98FC230062421A /* Build configuration list for PBXNativeTarget "ClientSide" */;
+			buildPhases = (
+				DCD2FD761D98FC230062421A /* Sources */,
+				DCD2FD771D98FC230062421A /* Frameworks */,
+				DCD2FD781D98FC230062421A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClientSide;
+			productName = KituraiOS;
+			productReference = DCD2FD7A1D98FC230062421A /* ClientSide.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCD2FD8D1D98FC230062421A /* ClientSide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD2FDA51D98FC230062421A /* Build configuration list for PBXNativeTarget "ClientSide" */;
+			buildPhases = (
+				DCD2FD8A1D98FC230062421A /* Sources */,
+				DCD2FD8B1D98FC230062421A /* Frameworks */,
+				DCD2FD8C1D98FC230062421A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCD2FD901D98FC230062421A /* PBXTargetDependency */,
+			);
+			name = ClientSide;
+			productName = KituraiOSTests;
+			productReference = DCD2FD8E1D98FC230062421A /* ClientSideTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DCD2FD981D98FC230062421A /* ClientSide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD2FDA81D98FC230062421A /* Build configuration list for PBXNativeTarget "ClientSide" */;
+			buildPhases = (
+				DCD2FD951D98FC230062421A /* Sources */,
+				DCD2FD961D98FC230062421A /* Frameworks */,
+				DCD2FD971D98FC230062421A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCD2FD9B1D98FC230062421A /* PBXTargetDependency */,
+			);
+			name = ClientSide;
+			productName = KituraiOSUITests;
+			productReference = DCD2FD991D98FC230062421A /* ClientSideUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCD2FD721D98FC230062421A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Roded Zats";
+				TargetAttributes = {
+					DCD2FD791D98FC230062421A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Manual;
+					};
+					DCD2FD8D1D98FC230062421A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DCD2FD791D98FC230062421A;
+					};
+					DCD2FD981D98FC230062421A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DCD2FD791D98FC230062421A;
+					};
+				};
+			};
+			buildConfigurationList = DCD2FD751D98FC230062421A /* Build configuration list for PBXProject "ClientSide" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCD2FD711D98FC230062421A;
+			productRefGroup = DCD2FD7B1D98FC230062421A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCD2FD791D98FC230062421A /* ClientSide */,
+				DCD2FD8D1D98FC230062421A /* ClientSide */,
+				DCD2FD981D98FC230062421A /* ClientSide */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCD2FD781D98FC230062421A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD2FD881D98FC230062421A /* LaunchScreen.storyboard in Resources */,
+				DCD2FD851D98FC230062421A /* Assets.xcassets in Resources */,
+				DCD2FD831D98FC230062421A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD2FD8C1D98FC230062421A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD2FD971D98FC230062421A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCD2FD761D98FC230062421A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC655F8B1E6EA81100B15995 /* LogViewController.swift in Sources */,
+				DC26755F1E714DAC00915F42 /* Colors.swift in Sources */,
+				DC79191E1E6D790F004AA9B5 /* KituraTableViewController.swift in Sources */,
+				DC26755D1E714D4800915F42 /* Log.swift in Sources */,
+				DCD2FDAC1D9901CB0062421A /* IPUtility.swift in Sources */,
+				DCD2FD7E1D98FC230062421A /* AppDelegate.swift in Sources */,
+				DC2675611E714E2000915F42 /* TextViewOutputStream.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD2FD8A1D98FC230062421A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5080221E30CC5200A73889 /* KituraViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD2FD951D98FC230062421A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD2FD9E1D98FC230062421A /* KituraiOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCD2FD901D98FC230062421A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCD2FD791D98FC230062421A /* ClientSide */;
+			targetProxy = DCD2FD8F1D98FC230062421A /* PBXContainerItemProxy */;
+		};
+		DCD2FD9B1D98FC230062421A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCD2FD791D98FC230062421A /* ClientSide */;
+			targetProxy = DCD2FD9A1D98FC230062421A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCD2FD811D98FC230062421A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCD2FD821D98FC230062421A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DCD2FD861D98FC230062421A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCD2FD871D98FC230062421A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCD2FDA01D98FC230062421A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DCD2FDA11D98FC230062421A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCD2FDA31D98FC230062421A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../iOSStaticLibraries/Curl/include";
+				INFOPLIST_FILE = KituraiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.ibm-swift.KituraHelloWorldIOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/../ServerSide/Packages/**";
+				SWIFT_OBJC_BRIDGING_HEADER = "KituraiOS/KituraiOS-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DCD2FDA41D98FC230062421A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../iOSStaticLibraries/Curl/include";
+				INFOPLIST_FILE = KituraiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.ibm-swift.KituraHelloWorldIOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/../ServerSide/Packages/**";
+				SWIFT_OBJC_BRIDGING_HEADER = "KituraiOS/KituraiOS-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DCD2FDA61D98FC230062421A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../iOSStaticLibraries/Curl/include";
+				INFOPLIST_FILE = KituraiOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.rodedz.KituraiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/../ServerSide/Packages/**";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClientSide.app/ClientSide";
+			};
+			name = Debug;
+		};
+		DCD2FDA71D98FC230062421A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../iOSStaticLibraries/Curl/include";
+				INFOPLIST_FILE = KituraiOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.rodedz.KituraiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/../ServerSide/Packages/**";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClientSide.app/ClientSide";
+			};
+			name = Release;
+		};
+		DCD2FDA91D98FC230062421A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = KituraiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.rodedz.KituraiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = KituraiOS;
+			};
+			name = Debug;
+		};
+		DCD2FDAA1D98FC230062421A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = KituraiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.rodedz.KituraiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = KituraiOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCD2FD751D98FC230062421A /* Build configuration list for PBXProject "ClientSide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD2FDA01D98FC230062421A /* Debug */,
+				DCD2FDA11D98FC230062421A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD2FDA21D98FC230062421A /* Build configuration list for PBXNativeTarget "ClientSide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD2FDA31D98FC230062421A /* Debug */,
+				DCD2FDA41D98FC230062421A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD2FDA51D98FC230062421A /* Build configuration list for PBXNativeTarget "ClientSide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD2FDA61D98FC230062421A /* Debug */,
+				DCD2FDA71D98FC230062421A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD2FDA81D98FC230062421A /* Build configuration list for PBXNativeTarget "ClientSide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD2FDA91D98FC230062421A /* Debug */,
+				DCD2FDAA1D98FC230062421A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCD2FD721D98FC230062421A /* Project object */;
+}
