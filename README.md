@@ -12,7 +12,8 @@ The app demonstrates starting and stopping Kitura server, and presents Kitura lo
 # Prerequisites
 1. Enable Server-Side Swift with Kitura - see http://www.kitura.io/en/starter/settingup.html
 2. Install Xcode Command Line Tools by running `xcode-select --install` command in the terminal
-3. Create an iOS static library for `curl` package. Download curl zipped source from https://curl.haxx.se/download/, unzip it and run `Builder/buildCurlStaticLibrary.sh <path to the unzipped curl source directory>`. For example, if you unzip curl in the current directory, in `curl-7.43.0` directory, run `Builder/buildCurlStaticLibrary.sh curl-7.43.0`.
+3. Run `make Builder/Makefile` - it will fetch the `Builder` submodule (and also the `ServerSide` submodule)
+4. Create an iOS static library for `curl` package. Download curl zipped source from https://curl.haxx.se/download/, unzip it and run `Builder/buildCurlStaticLibrary.sh <path to the unzipped curl source directory>`. For example, if you unzip curl in the current directory, in `curl-7.43.0` directory, run `Builder/buildCurlStaticLibrary.sh curl-7.43.0`.
 
 **We tested working with curl 7.43.0 version.**
 
