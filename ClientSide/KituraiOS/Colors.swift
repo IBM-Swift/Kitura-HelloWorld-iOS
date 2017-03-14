@@ -19,14 +19,14 @@ import UIKit
 
 extension KituraTableViewController {
     class Colors {
-        static let Running: UIColor = Colors.hexStringToUIColor(hex: "#7ed321")
-        static let Stopped: UIColor = Colors.hexStringToUIColor(hex: "#9b9b9b")
-        static let LogBar: UIColor = UIColor(red:CGFloat(32/255.0), green:CGFloat(147/255.0),
-                                                                blue:CGFloat(224/255.0), alpha:1.0)
-        static let MainStatusBar: UIColor = UIColor(red:CGFloat(32/255.0), green:CGFloat(147/255.0),
-                                                                blue:CGFloat(224/255.0), alpha:0.84)
+        static let Running = Colors.hexStringToUIColor(hex: "#7ed321")
+        static let Stopped = Colors.hexStringToUIColor(hex: "#9b9b9b")
+        static let LogBar = UIColor(red:CGFloat(32/255.0), green:CGFloat(147/255.0),
+                                    blue:CGFloat(224/255.0), alpha:1.0)
+        static let MainStatusBar = UIColor(red:CGFloat(32/255.0), green:CGFloat(147/255.0),
+                                           blue:CGFloat(224/255.0), alpha:0.84)
 
-        private static func hexStringToUIColor (hex:String) -> UIColor {
+        private static func hexStringToUIColor (hex: String) -> UIColor {
             var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
 
             if (cString.hasPrefix("#")) {
@@ -35,7 +35,7 @@ extension KituraTableViewController {
             if ((cString.characters.count) != 6) {
                 return UIColor.gray
             }
-            var rgbValue:UInt32 = 0
+            var rgbValue: UInt32 = 0
             Scanner(string: cString).scanHexInt32(&rgbValue)
 
             return UIColor(
