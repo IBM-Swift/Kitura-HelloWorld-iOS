@@ -27,16 +27,16 @@ extension KituraTableViewController {
                                            blue:CGFloat(224/255.0), alpha:0.84)
 
         private static func hexStringToUIColor (hex: String) -> UIColor {
-            var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+            var colorString = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
 
-            if (cString.hasPrefix("#")) {
-                cString.remove(at: cString.startIndex)
+            if (colorString.hasPrefix("#")) {
+                colorString.remove(at: colorString.startIndex)
             }
-            if ((cString.characters.count) != 6) {
+            if ((colorString.characters.count) != 6) {
                 return UIColor.gray
             }
             var rgbValue: UInt32 = 0
-            Scanner(string: cString).scanHexInt32(&rgbValue)
+            Scanner(string: colorString).scanHexInt32(&rgbValue)
 
             return UIColor(
                 red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
