@@ -31,7 +31,7 @@ BUILD_DIRECTORY="${OUTPUT_DIRECTORY}/.build"
 rm -rf ${OUTPUT_DIRECTORY}
 mkdir -p ${BUILD_DIRECTORY}
 mkdir -p ${OUTPUT_DIRECTORY}
-UtilityScripts/doBuildCurl.sh $CURL_SOURCE_DIRECTORY ${OUTPUT_DIRECTORY} ${BUILD_DIRECTORY}
+Builder/Scripts/doBuildCurl.sh $CURL_SOURCE_DIRECTORY ${OUTPUT_DIRECTORY} ${BUILD_DIRECTORY}
 if [ $? -ne 0 ]; then
     rm -rf ${OUTPUT_DIRECTORY};
     echo "ERROR: Building ${OUTPUT_DIRECTORY} failed."
