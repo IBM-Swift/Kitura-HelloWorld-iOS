@@ -21,10 +21,10 @@ extension KituraTableViewController {
     class Colors {
         static let Running = Colors.hexStringToUIColor(hex: "#7ed321")
         static let Stopped = Colors.hexStringToUIColor(hex: "#9b9b9b")
-        static let LogBar = UIColor(red:CGFloat(32/255.0), green:CGFloat(147/255.0),
-                                    blue:CGFloat(224/255.0), alpha:1.0)
-        static let MainStatusBar = UIColor(red:CGFloat(32/255.0), green:CGFloat(147/255.0),
-                                           blue:CGFloat(224/255.0), alpha:0.84)
+        static let LogBar = UIColor(red: CGFloat(32/255.0), green: CGFloat(147/255.0),
+                                    blue: CGFloat(224/255.0), alpha: 1.0)
+        static let MainStatusBar = UIColor(red: CGFloat(32/255.0), green: CGFloat(147/255.0),
+                                           blue: CGFloat(224/255.0), alpha: 0.84)
 
         private static func hexStringToUIColor (hex: String) -> UIColor {
             var colorString = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
