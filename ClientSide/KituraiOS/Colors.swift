@@ -19,25 +19,35 @@ import UIKit
 
 extension KituraTableViewController {
     class Colors {
-        static let Running = Colors.hexStringToUIColor(hex: "#7ed321")
-        static let Stopped = Colors.hexStringToUIColor(hex: "#9b9b9b")
+        static let Running = Colors.uiColor(fromHexadecimalString: "#7ed321")
+        static let Stopped = Colors.uiColor(fromHexadecimalString: "#9b9b9b")
         static let LogBar = UIColor(red: CGFloat(32/255.0), green: CGFloat(147/255.0),
                                     blue: CGFloat(224/255.0), alpha: 1.0)
         static let MainStatusBar = UIColor(red: CGFloat(32/255.0), green: CGFloat(147/255.0),
                                            blue: CGFloat(224/255.0), alpha: 0.84)
 
-        private static func hexStringToUIColor (hex: String) -> UIColor {
-            var colorString = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+        private static func uiColor (fromHexadecimalString hexadecimalString: String) -> UIColor {
+            var hexadecimalString =
+                hexadecimalString.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
 
-            if (colorString.hasPrefix("#")) {
-                colorString.remove(at: colorString.startIndex)
+            if hexadecimalString.hasPrefix("#") {
+                hexadecimalString.remove(at: hexadecimalString.startIndex)
             }
-            if ((colorString.characters.count) != 6) {
+
+            guard hexadecimalString.characters.count == 6 else {
                 return UIColor.gray
             }
-            var rgbValue: UInt32 = 0
-            Scanner(string: colorString).scanHexInt32(&rgbValue)
 
+            return uiColor(fromRGBValue: rgbValue(fromHexadecimalString: hexadecimalString))
+        }
+
+        private static func rgbValue(fromHexadecimalString string: String) -> UInt32 {
+            var rgbValue: UInt32 = 0
+            Scanner(string: string).scanHexInt32(&rgbValue)
+            return rgbValue
+        }
+
+        private static func uiColor(fromRGBValue rgbValue: UInt32) -> UIColor {
             return UIColor(
                 red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
                 green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
