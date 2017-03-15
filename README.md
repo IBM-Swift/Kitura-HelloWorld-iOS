@@ -26,3 +26,27 @@ You will see the URL of your Kitura/iOS server in the start screen of the app. S
 
 # Publications
 See https://developer.ibm.com/swift/2017/03/13/kitura-ios/
+
+# Quick Instructions
+(macOS Sierra 10.12.3 and Xcode 8.2.1)
+
+1. Setup (Run in terminal)
+```
+xcode-select --install
+sudo gem install xcodeproj
+
+git clone https://github.com/IBM-Swift/Kitura-HelloWorld-iOS.git
+cd Kitura-HelloWorld-iOS
+make Builder/Makefile
+
+curl -O https://curl.haxx.se/download/curl-7.43.0.tar.bz2
+bzip2 -d curl-7.43.0.tar.bz2; tar xopf curl-7.43.0.tar; rm -r curl-7.43.0.tar
+bash ./Builder/Scripts/buildCurlStaticLibrary.sh curl-7.43.0
+
+make
+```
+2. Open `EndToEnd.xcworkspace`
+3. Change scheme to "ClientSide"
+4. Load on iPhone or iPhone simulator
+5. On the running app, turn on the toggle switch above the QR code
+6. On another device, connect to the listed URL
