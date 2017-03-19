@@ -37,7 +37,6 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kitura" translatesAutoresizingMaskIntoConstraints="NO" id="onE-Kf-Cvh">
                                                     <rect key="frame" x="134" y="64" width="107" height="75"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="75" id="R6x-Bb-64O"/>
                                                         <constraint firstAttribute="width" constant="107" id="gVk-Ec-wRe"/>
                                                     </constraints>
                                                 </imageView>
@@ -62,7 +61,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STOPPED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGO-Gy-U5P">
-                                                    <rect key="frame" x="8" y="13" width="116" height="43"/>
+                                                    <rect key="frame" x="8" y="13" width="114.5" height="43"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -79,7 +78,6 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="DGO-Gy-U5P" firstAttribute="top" secondItem="dQY-Es-v0F" secondAttribute="topMargin" constant="5" id="5wd-oF-5kP"/>
-                                                <constraint firstItem="Xmm-Co-SbN" firstAttribute="leading" secondItem="DGO-Gy-U5P" secondAttribute="trailing" constant="194" id="b2h-GK-NeG"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Xmm-Co-SbN" secondAttribute="trailing" id="ez0-O9-7FL"/>
                                                 <constraint firstItem="Xmm-Co-SbN" firstAttribute="top" secondItem="dQY-Es-v0F" secondAttribute="topMargin" constant="11" id="nkN-tZ-9k2"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Xmm-Co-SbN" secondAttribute="bottom" constant="11" id="o6H-Qd-4vf"/>
