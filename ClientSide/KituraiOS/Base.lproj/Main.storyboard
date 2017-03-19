@@ -87,11 +87,11 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="140" id="o7i-Qf-0mC">
-                                        <rect key="frame" x="0.0" y="239" width="375" height="140"/>
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="117" id="o7i-Qf-0mC">
+                                        <rect key="frame" x="0.0" y="239" width="375" height="117"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o7i-Qf-0mC" id="LOW-2b-IpB">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="139"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="116"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect your client" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyK-Km-87V">
@@ -120,9 +120,9 @@
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="vXQ-af-fPn" secondAttribute="bottom" constant="23" id="0ER-ry-W9D"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="vXQ-af-fPn" secondAttribute="bottom" id="0ER-ry-W9D"/>
                                                 <constraint firstItem="CyK-Km-87V" firstAttribute="leading" secondItem="mag-ib-wKr" secondAttribute="leading" id="7b4-kw-PGU"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="mag-ib-wKr" secondAttribute="bottom" constant="62" id="7jo-qN-w7o"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="mag-ib-wKr" secondAttribute="bottom" constant="39" id="7jo-qN-w7o"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="vXQ-af-fPn" secondAttribute="trailing" id="9vj-qJ-GbS"/>
                                                 <constraint firstItem="vXQ-af-fPn" firstAttribute="top" secondItem="LOW-2b-IpB" secondAttribute="topMargin" id="KI0-q0-GyF"/>
                                                 <constraint firstItem="vXQ-af-fPn" firstAttribute="leading" relation="lessThanOrEqual" secondItem="CyK-Km-87V" secondAttribute="trailing" constant="63" id="LBF-gd-FPU"/>
@@ -133,7 +133,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="35" id="nkn-RA-uul">
-                                        <rect key="frame" x="0.0" y="379" width="375" height="35"/>
+                                        <rect key="frame" x="0.0" y="356" width="375" height="35"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nkn-RA-uul" id="PKG-mU-wDa">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="34"/>
@@ -162,15 +162,15 @@
                                             <segue destination="SgV-KY-bHF" kind="show" identifier="ShowLog" id="oek-Bp-21c"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="200" id="IAF-9L-xdh">
-                                        <rect key="frame" x="0.0" y="414" width="375" height="200"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="250" id="IAF-9L-xdh">
+                                        <rect key="frame" x="0.0" y="391" width="375" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IAF-9L-xdh" id="Rsd-mY-Yo0">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="199"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="249"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Kitura IOS App Started!" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bf1-Qm-VzU">
-                                                    <rect key="frame" x="8" y="23" width="359" height="153.5"/>
+                                                    <rect key="frame" x="8" y="8" width="359" height="233.5"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -178,9 +178,9 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Bf1-Qm-VzU" secondAttribute="trailing" id="1we-XJ-t9Q"/>
-                                                <constraint firstItem="Bf1-Qm-VzU" firstAttribute="top" secondItem="Rsd-mY-Yo0" secondAttribute="topMargin" constant="15" id="qKK-jN-vV9"/>
+                                                <constraint firstItem="Bf1-Qm-VzU" firstAttribute="top" secondItem="Rsd-mY-Yo0" secondAttribute="topMargin" id="qKK-jN-vV9"/>
                                                 <constraint firstAttribute="leadingMargin" secondItem="Bf1-Qm-VzU" secondAttribute="leading" id="wF7-rf-z6O"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Bf1-Qm-VzU" secondAttribute="bottom" constant="15" id="yja-qb-Vhe"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Bf1-Qm-VzU" secondAttribute="bottom" id="yja-qb-Vhe"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <accessibility key="accessibilityConfiguration">
