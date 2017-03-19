@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		090CB4F9705E79147B8F4AEE /* Kitura.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84DAF3106A7E6B422A6A342C /* Kitura.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		27430EE36EBBBA28DF38362C /* KituraHelloWorld.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D196480BD119F1978124B74 /* KituraHelloWorld.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2C562D23AB17E536F31AA3C3 /* Socket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 744A008D208B26A618F43286 /* Socket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55DCECE0243D9A5E3457C817 /* CHTTPParser.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B729918C7960FD9FAC746A51 /* CHTTPParser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		672ADD5B13D3F7442EC9FB6D /* LoggerAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69F59FD95F2B0B31717D47DD /* LoggerAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9B4AFFF417567E16D4B8916C /* SSLService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A40FAD539F7AA47F7617D06 /* SSLService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A364ADFA9CF450C87C12FD53 /* HeliumLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA30B42E002F21A9B49F0A43 /* HeliumLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ABE3D51F43EBDD425E5279DA /* KituraTemplateEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E99EFE0275222ECF420A4B05 /* KituraTemplateEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C7EF3A18C8144697E6709C7C /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D44E8501C1033ADB5B8D426E /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC5889A91E7EBA08003D80A7 /* SharedServerClient.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5889A71E7EBA08003D80A7 /* SharedServerClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC5889B01E7EBA1F003D80A7 /* SharedServerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5889AF1E7EBA1F003D80A7 /* SharedServerClient.swift */; };
+		ECCB1E8510BD42272B5B0017 /* KituraNet.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 812FC3B5CBB559067192BE60 /* KituraNet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F7092FEE74E10D92CEE94468 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				672ADD5B13D3F7442EC9FB6D /* LoggerAPI.framework in Embed Frameworks */,
+				2C562D23AB17E536F31AA3C3 /* Socket.framework in Embed Frameworks */,
+				9B4AFFF417567E16D4B8916C /* SSLService.framework in Embed Frameworks */,
+				55DCECE0243D9A5E3457C817 /* CHTTPParser.framework in Embed Frameworks */,
+				ECCB1E8510BD42272B5B0017 /* KituraNet.framework in Embed Frameworks */,
+				C7EF3A18C8144697E6709C7C /* SwiftyJSON.framework in Embed Frameworks */,
+				ABE3D51F43EBDD425E5279DA /* KituraTemplateEngine.framework in Embed Frameworks */,
+				090CB4F9705E79147B8F4AEE /* Kitura.framework in Embed Frameworks */,
+				A364ADFA9CF450C87C12FD53 /* HeliumLogger.framework in Embed Frameworks */,
+				27430EE36EBBBA28DF38362C /* KituraHelloWorld.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		69F59FD95F2B0B31717D47DD /* LoggerAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoggerAPI.framework; path = "/Users/rodedz/Desktop/Developer/SwiftProjects/new_try/forked/second/Kitura-HelloWorld-iOS/SharedServerClient/build/Debug-iphoneos/LoggerAPI.framework"; sourceTree = "<absolute>"; };
+		744A008D208B26A618F43286 /* Socket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Socket.framework; path = "/Users/rodedz/Desktop/Developer/SwiftProjects/new_try/forked/second/Kitura-HelloWorld-iOS/SharedServerClient/build/Debug-iphoneos/Socket.framework"; sourceTree = "<absolute>"; };
+		7A40FAD539F7AA47F7617D06 /* SSLService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SSLService.framework; path = "/Users/rodedz/Desktop/Developer/SwiftProjects/new_try/forked/second/Kitura-HelloWorld-iOS/SharedServerClient/build/Debug-iphoneos/SSLService.framework"; sourceTree = "<absolute>"; };
+		812FC3B5CBB559067192BE60 /* KituraNet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KituraNet.framework; path = "/Users/rodedz/Desktop/Developer/SwiftProjects/new_try/forked/second/Kitura-HelloWorld-iOS/SharedServerClient/build/Debug-iphoneos/KituraNet.framework"; sourceTree = "<absolute>"; };
+		84DAF3106A7E6B422A6A342C /* Kitura.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kitura.framework; path = "/Users/rodedz/Desktop/Developer/SwiftProjects/new_try/forked/second/Kitura-HelloWorld-iOS/SharedServerClient/build/Debug-iphoneos/Kitura.framework"; sourceTree = "<absolute>"; };
+		8D196480BD119F1978124B74 /* KituraHelloWorld.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KituraHelloWorld.framework; path = "/Users/rodedz/Desktop/Developer/SwiftProjects/new_try/forked/second/Kitura-HelloWorld-iOS/SharedServerClient/build/Debug-iphoneos/KituraHelloWorld.framework"; sourceTree = "<absolute>"; };
+		B729918C7960FD9FAC746A51 /* CHTTPParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CHTTPParser.framework; path = "/Users/rodedz/Desktop/Developer/SwiftProjects/new_try/forked/second/Kitura-HelloWorld-iOS/SharedServerClient/build/Debug-iphoneos/CHTTPParser.framework"; sourceTree = "<absolute>"; };
+		CA30B42E002F21A9B49F0A43 /* HeliumLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HeliumLogger.framework; path = "/Users/rodedz/Desktop/Developer/SwiftProjects/new_try/forked/second/Kitura-HelloWorld-iOS/SharedServerClient/build/Debug-iphoneos/HeliumLogger.framework"; sourceTree = "<absolute>"; };
+		D44E8501C1033ADB5B8D426E /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "/Users/rodedz/Desktop/Developer/SwiftProjects/new_try/forked/second/Kitura-HelloWorld-iOS/SharedServerClient/build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<absolute>"; };
+		DC5889A41E7EBA08003D80A7 /* SharedServerClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedServerClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5889A71E7EBA08003D80A7 /* SharedServerClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedServerClient.h; sourceTree = "<group>"; };
+		DC5889A81E7EBA08003D80A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC5889AF1E7EBA1F003D80A7 /* SharedServerClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedServerClient.swift; sourceTree = "<group>"; };
+		E99EFE0275222ECF420A4B05 /* KituraTemplateEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KituraTemplateEngine.framework; path = "/Users/rodedz/Desktop/Developer/SwiftProjects/new_try/forked/second/Kitura-HelloWorld-iOS/SharedServerClient/build/Debug-iphoneos/KituraTemplateEngine.framework"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC5889A01E7EBA08003D80A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC58899A1E7EBA08003D80A7 = {
+			isa = PBXGroup;
+			children = (
+				DC5889A61E7EBA08003D80A7 /* SharedServerClient */,
+				DC5889A51E7EBA08003D80A7 /* Products */,
+				FA43736867637011A1FDC68C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC5889A51E7EBA08003D80A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC5889A41E7EBA08003D80A7 /* SharedServerClient.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC5889A61E7EBA08003D80A7 /* SharedServerClient */ = {
+			isa = PBXGroup;
+			children = (
+				DC5889A71E7EBA08003D80A7 /* SharedServerClient.h */,
+				DC5889A81E7EBA08003D80A7 /* Info.plist */,
+				DC5889AF1E7EBA1F003D80A7 /* SharedServerClient.swift */,
+			);
+			path = SharedServerClient;
+			sourceTree = "<group>";
+		};
+		FA43736867637011A1FDC68C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DC5889A11E7EBA08003D80A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5889A91E7EBA08003D80A7 /* SharedServerClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DC5889A31E7EBA08003D80A7 /* SharedServerClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC5889AC1E7EBA08003D80A7 /* Build configuration list for PBXNativeTarget "SharedServerClient" */;
+			buildPhases = (
+				DC58899F1E7EBA08003D80A7 /* Sources */,
+				DC5889A01E7EBA08003D80A7 /* Frameworks */,
+				DC5889A11E7EBA08003D80A7 /* Headers */,
+				DC5889A21E7EBA08003D80A7 /* Resources */,
+				F7092FEE74E10D92CEE94468 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SharedServerClient;
+			productName = SharedServerClient;
+			productReference = DC5889A41E7EBA08003D80A7 /* SharedServerClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC58899B1E7EBA08003D80A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = IBM;
+				TargetAttributes = {
+					DC5889A31E7EBA08003D80A7 = {
+						CreatedOnToolsVersion = 8.2;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DC58899E1E7EBA08003D80A7 /* Build configuration list for PBXProject "SharedServerClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DC58899A1E7EBA08003D80A7;
+			productRefGroup = DC5889A51E7EBA08003D80A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC5889A31E7EBA08003D80A7 /* SharedServerClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC5889A21E7EBA08003D80A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC58899F1E7EBA08003D80A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5889B01E7EBA1F003D80A7 /* SharedServerClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DC5889AA1E7EBA08003D80A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DC5889AB1E7EBA08003D80A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DC5889AD1E7EBA08003D80A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SharedServerClient/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.SharedServerClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/../ServerSide/Packages/**";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DC5889AE1E7EBA08003D80A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SharedServerClient/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.SharedServerClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/../ServerSide/Packages/**";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC58899E1E7EBA08003D80A7 /* Build configuration list for PBXProject "SharedServerClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5889AA1E7EBA08003D80A7 /* Debug */,
+				DC5889AB1E7EBA08003D80A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC5889AC1E7EBA08003D80A7 /* Build configuration list for PBXNativeTarget "SharedServerClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5889AD1E7EBA08003D80A7 /* Debug */,
+				DC5889AE1E7EBA08003D80A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC58899B1E7EBA08003D80A7 /* Project object */;
+}
