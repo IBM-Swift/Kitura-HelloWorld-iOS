@@ -5,3 +5,6 @@
 	path = ServerSide
 	url = https://github.com/IBM-Swift/kitura-helloworld.git
 	branch = two_modules
+[submodule "ClientSide"]
+	path = ClientSide
+	url = git@github.com:IBM-Swift/Kitura-Mobile-Server.git
