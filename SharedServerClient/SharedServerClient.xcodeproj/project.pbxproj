@@ -7,58 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		090CB4F9705E79147B8F4AEE /* Kitura.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84DAF3106A7E6B422A6A342C /* Kitura.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		27430EE36EBBBA28DF38362C /* KituraHelloWorld.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D196480BD119F1978124B74 /* KituraHelloWorld.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2C562D23AB17E536F31AA3C3 /* Socket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 744A008D208B26A618F43286 /* Socket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		55DCECE0243D9A5E3457C817 /* CHTTPParser.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B729918C7960FD9FAC746A51 /* CHTTPParser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		672ADD5B13D3F7442EC9FB6D /* LoggerAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69F59FD95F2B0B31717D47DD /* LoggerAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9B4AFFF417567E16D4B8916C /* SSLService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A40FAD539F7AA47F7617D06 /* SSLService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A364ADFA9CF450C87C12FD53 /* HeliumLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA30B42E002F21A9B49F0A43 /* HeliumLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		ABE3D51F43EBDD425E5279DA /* KituraTemplateEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E99EFE0275222ECF420A4B05 /* KituraTemplateEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C7EF3A18C8144697E6709C7C /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D44E8501C1033ADB5B8D426E /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC5889A91E7EBA08003D80A7 /* SharedServerClient.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5889A71E7EBA08003D80A7 /* SharedServerClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC5889B01E7EBA1F003D80A7 /* SharedServerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5889AF1E7EBA1F003D80A7 /* SharedServerClient.swift */; };
-		ECCB1E8510BD42272B5B0017 /* KituraNet.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 812FC3B5CBB559067192BE60 /* KituraNet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		F7092FEE74E10D92CEE94468 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				672ADD5B13D3F7442EC9FB6D /* LoggerAPI.framework in Embed Frameworks */,
-				2C562D23AB17E536F31AA3C3 /* Socket.framework in Embed Frameworks */,
-				9B4AFFF417567E16D4B8916C /* SSLService.framework in Embed Frameworks */,
-				55DCECE0243D9A5E3457C817 /* CHTTPParser.framework in Embed Frameworks */,
-				ECCB1E8510BD42272B5B0017 /* KituraNet.framework in Embed Frameworks */,
-				C7EF3A18C8144697E6709C7C /* SwiftyJSON.framework in Embed Frameworks */,
-				ABE3D51F43EBDD425E5279DA /* KituraTemplateEngine.framework in Embed Frameworks */,
-				090CB4F9705E79147B8F4AEE /* Kitura.framework in Embed Frameworks */,
-				A364ADFA9CF450C87C12FD53 /* HeliumLogger.framework in Embed Frameworks */,
-				27430EE36EBBBA28DF38362C /* KituraHelloWorld.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		69F59FD95F2B0B31717D47DD /* LoggerAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoggerAPI.framework; path = "/Users/rodedz/Desktop/Developer/SwiftProjects/new_try/forked/second/Kitura-HelloWorld-iOS/SharedServerClient/build/Debug-iphoneos/LoggerAPI.framework"; sourceTree = "<absolute>"; };
-		744A008D208B26A618F43286 /* Socket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Socket.framework; path = "/Users/rodedz/Desktop/Developer/SwiftProjects/new_try/forked/second/Kitura-HelloWorld-iOS/SharedServerClient/build/Debug-iphoneos/Socket.framework"; sourceTree = "<absolute>"; };
-		7A40FAD539F7AA47F7617D06 /* SSLService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SSLService.framework; path = "/Users/rodedz/Desktop/Developer/SwiftProjects/new_try/forked/second/Kitura-HelloWorld-iOS/SharedServerClient/build/Debug-iphoneos/SSLService.framework"; sourceTree = "<absolute>"; };
-		812FC3B5CBB559067192BE60 /* KituraNet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KituraNet.framework; path = "/Users/rodedz/Desktop/Developer/SwiftProjects/new_try/forked/second/Kitura-HelloWorld-iOS/SharedServerClient/build/Debug-iphoneos/KituraNet.framework"; sourceTree = "<absolute>"; };
-		84DAF3106A7E6B422A6A342C /* Kitura.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kitura.framework; path = "/Users/rodedz/Desktop/Developer/SwiftProjects/new_try/forked/second/Kitura-HelloWorld-iOS/SharedServerClient/build/Debug-iphoneos/Kitura.framework"; sourceTree = "<absolute>"; };
-		8D196480BD119F1978124B74 /* KituraHelloWorld.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KituraHelloWorld.framework; path = "/Users/rodedz/Desktop/Developer/SwiftProjects/new_try/forked/second/Kitura-HelloWorld-iOS/SharedServerClient/build/Debug-iphoneos/KituraHelloWorld.framework"; sourceTree = "<absolute>"; };
-		B729918C7960FD9FAC746A51 /* CHTTPParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CHTTPParser.framework; path = "/Users/rodedz/Desktop/Developer/SwiftProjects/new_try/forked/second/Kitura-HelloWorld-iOS/SharedServerClient/build/Debug-iphoneos/CHTTPParser.framework"; sourceTree = "<absolute>"; };
-		CA30B42E002F21A9B49F0A43 /* HeliumLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HeliumLogger.framework; path = "/Users/rodedz/Desktop/Developer/SwiftProjects/new_try/forked/second/Kitura-HelloWorld-iOS/SharedServerClient/build/Debug-iphoneos/HeliumLogger.framework"; sourceTree = "<absolute>"; };
-		D44E8501C1033ADB5B8D426E /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "/Users/rodedz/Desktop/Developer/SwiftProjects/new_try/forked/second/Kitura-HelloWorld-iOS/SharedServerClient/build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<absolute>"; };
 		DC5889A41E7EBA08003D80A7 /* SharedServerClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedServerClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC5889A71E7EBA08003D80A7 /* SharedServerClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedServerClient.h; sourceTree = "<group>"; };
 		DC5889A81E7EBA08003D80A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC5889AF1E7EBA1F003D80A7 /* SharedServerClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedServerClient.swift; sourceTree = "<group>"; };
-		E99EFE0275222ECF420A4B05 /* KituraTemplateEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KituraTemplateEngine.framework; path = "/Users/rodedz/Desktop/Developer/SwiftProjects/new_try/forked/second/Kitura-HelloWorld-iOS/SharedServerClient/build/Debug-iphoneos/KituraTemplateEngine.framework"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +85,6 @@
 				DC5889A01E7EBA08003D80A7 /* Frameworks */,
 				DC5889A11E7EBA08003D80A7 /* Headers */,
 				DC5889A21E7EBA08003D80A7 /* Resources */,
-				F7092FEE74E10D92CEE94468 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
