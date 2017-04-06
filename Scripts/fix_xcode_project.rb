@@ -16,12 +16,22 @@ gem 'xcodeproj'
 require 'xcodeproj'
 
 def append_to_build_settings(target,mode,setting,value)
-    target.build_settings(mode)[setting].push(value)
+    if target.build_settings(mode)[setting].kind_of?(Array)
+        target.build_settings(mode)[setting].push(value)
+    else
+        target.build_settings(mode)[setting] = value
+    end
 end
 
 def append_to_build_setting_all_modes(target,setting,value)
-    append_to_build_settings(target,"Release",setting,value);
-    append_to_build_settings(target,"Debug",setting,value);
+    append_to_build_settings(target,"Release",setting,value)
+    append_to_build_settings(target,"Debug",setting,value)
+end
+
+def fix_build_settings_of_target(target, headers_path, library_path)
+    append_to_build_setting_all_modes(target,"HEADER_SEARCH_PATHS",headers_path)
+    append_to_build_setting_all_modes(target,"OTHER_LDFLAGS","-lz")
+    append_to_build_setting_all_modes(target,"LIBRARY_SEARCH_PATHS",library_path)
 end
 
 def fix_server_project(server_project, main_module, kitura_net, library_file_path, headers_path, library_path)
@@ -39,9 +49,7 @@ def fix_server_project(server_project, main_module, kitura_net, library_file_pat
     }
 
     #Add headers
-    append_to_build_setting_all_modes(kitura_net_target,"HEADER_SEARCH_PATHS",headers_path)
-    append_to_build_setting_all_modes(kitura_net_target,"OTHER_LDFLAGS","-lz")
-    append_to_build_setting_all_modes(kitura_net_target,"LIBRARY_SEARCH_PATHS",library_path)
+    fix_build_settings_of_target(kitura_net_target, headers_path, library_path)
 
     #Add library
     build_phase = kitura_net_target.frameworks_build_phase
@@ -50,10 +58,10 @@ def fix_server_project(server_project, main_module, kitura_net, library_file_pat
     build_file = build_phase.add_file_reference(library_reference)
 end
 
-def fix_client_project(client_project, server_project)
+def fix_client_project(client_project, server_project, headers_path, library_path)
     #Add server frameworks to client
     client_target_name_to_fix = "ClientSide"
-    client_target_to_fix = (client_project.targets.select { |target| target.name = client_target_name_to_fix }).first;
+    client_target_to_fix = (client_project.targets.select { |target| target.name == client_target_name_to_fix }).first;
 
     client_framework_group = client_project.frameworks_group
     client_framework_build_phase = client_target_to_fix.frameworks_build_phase
@@ -76,14 +84,17 @@ def fix_client_project(client_project, server_project)
             build_file.settings = { 'ATTRIBUTES' => ['CodeSignOnCopy', 'RemoveHeadersOnCopy'] }
         end
     end
+
+    fix_build_settings_of_target(client_target_to_fix, headers_path, library_path)
 end
 
 server_project_file = ARGV[0];
 main_module = ARGV[1];
 client_project_file = ARGV[2];
+number_of_bits = ARGV[3];
 
 library_file_path = "../iOSStaticLibraries/Curl/lib/libcurl.a"
-headers_path = "$(PROJECT_DIR)/../iOSStaticLibraries/Curl/include"
+headers_path = "$(PROJECT_DIR)/../iOSStaticLibraries/Curl/include" + "-" + number_of_bits
 library_path= "$(PROJECT_DIR)/../iOSStaticLibraries/Curl/lib"
 kitura_net = "KituraNet"
 
@@ -91,7 +102,7 @@ server_project = Xcodeproj::Project.open(server_project_file);
 client_project = Xcodeproj::Project.open(client_project_file);
 
 fix_server_project(server_project, main_module, kitura_net, library_file_path, headers_path, library_path)
-fix_client_project(client_project, server_project)
+fix_client_project(client_project, server_project, headers_path, library_path)
 
 server_project.save;
 client_project.save;

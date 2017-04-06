@@ -40,6 +40,5 @@ if [ $? -ne 0 ]; then
 fi
 
 rm -rf ${OUTPUT_DIRECTORY}/include
-ln -s ${OUTPUT_DIRECTORY}/include-64 ${OUTPUT_DIRECTORY}/include
 rm -rf ${BUILD_DIRECTORY}
 echo "Succussfully built ${OUTPUT_DIRECTORY}. Now you can run make openXcode"

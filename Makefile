@@ -18,16 +18,22 @@ endif
 
 all: openXcode
 
-openXcode: iOSStaticLibraries/Curl ServerSide
+openXcodeAll: iOSStaticLibraries/Curl ServerSide
 	@echo --- Generating ServerSide Xcode project
 	cd ServerSide && swift package generate-xcodeproj
 	@echo ——- Fixing ServerSide Xcode project
-	-${KITURA_IOS_BUILD_SCRIPTS_DIR}/fixServerSideXcodeProject.sh
+	-${KITURA_IOS_BUILD_SCRIPTS_DIR}/fixServerSideXcodeProject.sh ${NUMBER_OF_BITS}
 	@echo ——- Creating EndToEnd Xcode workspace
 	rm -rf EndToEnd.xcworkspace
 	-ruby ${KITURA_IOS_BUILD_SCRIPTS_DIR}/create_xcode_workspace.rb ClientSide/*.xcodeproj ServerSide/*.xcodeproj
 	@echo --- Opening EndToEnd workspace
 	open EndToEnd.xcworkspace
+
+openXcode32:
+	make NUMBER_OF_BITS="32" openXcodeAll
+
+openXcode:
+	make NUMBER_OF_BITS="64" openXcodeAll
 
 ServerSide:
 	@echo --- Fetching submodules
