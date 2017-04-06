@@ -51,9 +51,9 @@
 		DCD2FD841D98FC230062421A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCD2FD871D98FC230062421A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCD2FD891D98FC230062421A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCD2FD8E1D98FC230062421A /* ClientSideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ClientSideTests.xctest; path = ClientSide.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD2FD8E1D98FC230062421A /* ClientSideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClientSideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD2FD941D98FC230062421A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCD2FD991D98FC230062421A /* ClientSideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ClientSideUITests.xctest; path = ClientSide.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD2FD991D98FC230062421A /* ClientSideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClientSideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD2FD9D1D98FC230062421A /* KituraiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KituraiOSUITests.swift; sourceTree = "<group>"; };
 		DCD2FD9F1D98FC230062421A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCD2FDAB1D9901CB0062421A /* IPUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPUtility.swift; sourceTree = "<group>"; };
@@ -170,9 +170,9 @@
 			productReference = DCD2FD7A1D98FC230062421A /* ClientSide.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DCD2FD8D1D98FC230062421A /* ClientSide */ = {
+		DCD2FD8D1D98FC230062421A /* ClientSideTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DCD2FDA51D98FC230062421A /* Build configuration list for PBXNativeTarget "ClientSide" */;
+			buildConfigurationList = DCD2FDA51D98FC230062421A /* Build configuration list for PBXNativeTarget "ClientSideTests" */;
 			buildPhases = (
 				DCD2FD8A1D98FC230062421A /* Sources */,
 				DCD2FD8B1D98FC230062421A /* Frameworks */,
@@ -183,14 +183,14 @@
 			dependencies = (
 				DCD2FD901D98FC230062421A /* PBXTargetDependency */,
 			);
-			name = ClientSide;
+			name = ClientSideTests;
 			productName = KituraiOSTests;
 			productReference = DCD2FD8E1D98FC230062421A /* ClientSideTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DCD2FD981D98FC230062421A /* ClientSide */ = {
+		DCD2FD981D98FC230062421A /* ClientSideUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DCD2FDA81D98FC230062421A /* Build configuration list for PBXNativeTarget "ClientSide" */;
+			buildConfigurationList = DCD2FDA81D98FC230062421A /* Build configuration list for PBXNativeTarget "ClientSideUITests" */;
 			buildPhases = (
 				DCD2FD951D98FC230062421A /* Sources */,
 				DCD2FD961D98FC230062421A /* Frameworks */,
@@ -201,7 +201,7 @@
 			dependencies = (
 				DCD2FD9B1D98FC230062421A /* PBXTargetDependency */,
 			);
-			name = ClientSide;
+			name = ClientSideUITests;
 			productName = KituraiOSUITests;
 			productReference = DCD2FD991D98FC230062421A /* ClientSideUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -246,8 +246,8 @@
 			projectRoot = "";
 			targets = (
 				DCD2FD791D98FC230062421A /* ClientSide */,
-				DCD2FD8D1D98FC230062421A /* ClientSide */,
-				DCD2FD981D98FC230062421A /* ClientSide */,
+				DCD2FD8D1D98FC230062421A /* ClientSideTests */,
+				DCD2FD981D98FC230062421A /* ClientSideUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -448,15 +448,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../iOSStaticLibraries/Curl/include";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = KituraiOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lz",
-				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.ibm-swift.KituraHelloWorldIOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/../ServerSide/Packages/**";
@@ -477,15 +474,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../iOSStaticLibraries/Curl/include";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = KituraiOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lz",
-				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.ibm-swift.KituraHelloWorldIOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/../ServerSide/Packages/**";
@@ -577,7 +571,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DCD2FDA51D98FC230062421A /* Build configuration list for PBXNativeTarget "ClientSide" */ = {
+		DCD2FDA51D98FC230062421A /* Build configuration list for PBXNativeTarget "ClientSideTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DCD2FDA61D98FC230062421A /* Debug */,
@@ -586,7 +580,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DCD2FDA81D98FC230062421A /* Build configuration list for PBXNativeTarget "ClientSide" */ = {
+		DCD2FDA81D98FC230062421A /* Build configuration list for PBXNativeTarget "ClientSideUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DCD2FDA91D98FC230062421A /* Debug */,
