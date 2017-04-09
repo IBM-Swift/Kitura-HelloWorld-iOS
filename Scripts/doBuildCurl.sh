@@ -93,7 +93,7 @@ build()
     export CFLAGS="-arch ${ARCH} -pipe -Os -gdwarf-2 -isysroot ${SDK} -fembed-bitcode"
     export CPPFLAGS=${MOREFLAGS}
     export LDFLAGS="-arch ${ARCH} -isysroot ${SDK}"
-    ./configure --disable-shared --enable-static --host=${HOST} --without-ssl --without-libssh2 --without-ca-bundle --without-ldap --disable-ldap --prefix="${BUILD_DIRECTORY}/curl-${ARCH}" &> "${BUILD_DIRECTORY}/curl-${ARCH}.log"
+    ./configure --disable-shared --enable-static --host=${HOST} --with-darwinssl --prefix="${BUILD_DIRECTORY}/curl-${ARCH}" &> "${BUILD_DIRECTORY}/curl-${ARCH}.log"
     make -j `sysctl -n hw.logicalcpu_max` &> "${BUILD_DIRECTORY}/curl-${ARCH}.build-log"
     make install &> "${BUILD_DIRECTORY}/curl-${ARCH}.install-log"
     popd > /dev/null
