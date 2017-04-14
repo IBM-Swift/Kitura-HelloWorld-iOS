@@ -30,7 +30,7 @@ class KituraTableViewController: UITableViewController {
     private var queue = DispatchQueue(label: "server_thread")
     private var router = Router()
     private var log = Log()
-    private let port = 8090
+    private let port = 8080
     private let RunningMessage = "RUNNING"
     private let StoppedMessage = "STOPPED"
 

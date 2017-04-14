@@ -26,18 +26,18 @@ class KituraViewControllerTests: XCTestCase {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         viewController = storyboard.instantiateInitialViewController() as! KituraViewController
     }
-    
+
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
+
     func testHelloWorldIsReturnedFromServer() {
         let _ = viewController.view
         XCTAssertNotNil(viewController.view)
         viewController.kituraSwitch.setOn(true,animated: false)
         viewController.statusChanged(viewController.kituraSwitch)
-        guard let url = URL(string: "http://localhost:8090") else {
+        guard let url = URL(string: "http://localhost:8080") else {
             XCTFail()
             return
         }
