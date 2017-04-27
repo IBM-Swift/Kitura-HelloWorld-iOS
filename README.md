@@ -28,7 +28,7 @@ You will see the URL of your Kitura/iOS server in the start screen of the app. S
 See https://developer.ibm.com/swift/2017/03/13/kitura-ios/
 
 # Quick Instructions
-(macOS Sierra 10.12.3 and Xcode 8.2.1)
+(macOS Sierra 10.12.4 and Xcode 8.3.2)
 
 1. Setup (Run in terminal)
 ```
@@ -42,11 +42,26 @@ make Builder/Makefile
 curl -O https://curl.haxx.se/download/curl-7.43.0.tar.bz2
 bzip2 -d curl-7.43.0.tar.bz2; tar xopf curl-7.43.0.tar; rm -r curl-7.43.0.tar
 bash ./Builder/Scripts/buildCurlStaticLibrary.sh curl-7.43.0
+```
 
+For 64Bit (example, iPhone 5s or newer, iPad Air or newer, iPad Mini 2 or newer, iPad Pro or newer)
+```
 make
 ```
+
+For 32Bit (example, iPhone 5, 5c, iPad 4)
+```
+make openXcode32
+```
+
 2. Open `EndToEnd.xcworkspace`
 3. Change scheme to "ClientSide"
 4. Load on iPhone or iPhone simulator
 5. On the running app, turn on the toggle switch above the QR code
 6. On another device, connect to the listed URL
+
+# (Upgrade) Quick Instructions
+
+1. `git pull` to get the latest version of Kitura
+2. Remove the `Builder` directory
+3. run `make` or `make openXcode32`
