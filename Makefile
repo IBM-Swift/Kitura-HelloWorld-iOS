@@ -19,6 +19,7 @@ endif
 all: openXcode
 
 openXcodeAll: iOSStaticLibraries/Curl ServerSide
+	rm -f ServerSide/.build/checkouts/Kitura-net.git--*/Sources/CHTTPParser/include/module.modulemap
 	@echo --- Generating ServerSide Xcode project
 	cd ServerSide && swift package generate-xcodeproj
 	@echo ——- Fixing ServerSide Xcode project

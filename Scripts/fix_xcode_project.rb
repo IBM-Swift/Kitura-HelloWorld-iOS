@@ -15,12 +15,25 @@
 gem 'xcodeproj'
 require 'xcodeproj'
 
+def remove_from_build_settings(target, mode, setting, value)
+    if target.build_settings(mode)[setting].kind_of?(Array)
+        target.build_settings(mode)[setting].delete value
+    else
+        target.build_settings(mode)[setting].slice! value
+    end
+end
+
 def append_to_build_settings(target,mode,setting,value)
     if target.build_settings(mode)[setting].kind_of?(Array)
         target.build_settings(mode)[setting].push(value)
     else
         target.build_settings(mode)[setting] = value
     end
+end
+
+def remove_from_build_settings_all_modes(target,setting,value)
+    remove_from_build_settings(target,"Release",setting,value)
+    remove_from_build_settings(target,"Debug",setting,value)
 end
 
 def append_to_build_setting_all_modes(target,setting,value)
@@ -34,7 +47,8 @@ def fix_build_settings_of_target(target, headers_path, library_path)
     append_to_build_setting_all_modes(target,"LIBRARY_SEARCH_PATHS",library_path)
 end
 
-def fix_server_project(server_project, main_module, kitura_net, library_file_path, headers_path, library_path)
+def fix_server_project(server_project, main_module, kitura_net, library_file_path, headers_path,
+                       library_path, server_project_file_basename, kitura_net_package)
     main_target = (server_project.targets.select { |target| target.name == main_module }).first;
     main_target.remove_from_project
 
@@ -43,9 +57,25 @@ def fix_server_project(server_project, main_module, kitura_net, library_file_pat
 
     kitura_net_target = (server_project.targets.select { |target| target.name == kitura_net }).first;
 
-    server_project.targets.select { |target|
+    cHTTPParserModuleMapDirectoryToReplace = '$(SRCROOT)/' + server_project_file_basename +
+                                             '/GeneratedModuleMap/CHTTPParser'
+
+    server_project.targets.each { |target|
         target.build_settings('Debug').delete "SUPPORTED_PLATFORMS"
         target.build_settings('Release').delete "SUPPORTED_PLATFORMS"
+
+        # fix generated CHTTPParser Module Map
+        remove_from_build_settings_all_modes(target, 'HEADER_SEARCH_PATHS',
+                                             cHTTPParserModuleMapDirectoryToReplace)
+
+        remove_from_build_settings_all_modes(target, 'OTHER_SWIFT_FLAGS',
+                                             '-Xcc -fmodule-map-file=' +
+                                             cHTTPParserModuleMapDirectoryToReplace + '/module.modulemap')
+
+        append_to_build_setting_all_modes(target, 'OTHER_SWIFT_FLAGS',
+                                          '-Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/' +
+                                          kitura_net_package +
+                                          '/Sources/CHTTPParser/include/module.modulemap')
     }
 
     #Add headers
@@ -56,6 +86,31 @@ def fix_server_project(server_project, main_module, kitura_net, library_file_pat
     framework_group = server_project.frameworks_group
     library_reference = framework_group.new_reference(library_file_path)
     build_file = build_phase.add_file_reference(library_reference)
+
+    #fix reference of CHTTPParser Module Map
+
+    modulemaps = (server_project.files.select { |file| file.name == 'module.modulemap' })
+    cHTTPParserModuleMap = (modulemaps.select { |modulemap_file|
+      ! ((modulemap_file.path.slice 'CHTTPParser/module.modulemap').empty?)
+    })[0]
+
+    if cHTTPParserModuleMap != nil
+      puts "cHTTPParserModuleMap: " + cHTTPParserModuleMap.path
+      cHTTPParserModuleMap.remove_from_project
+    end
+
+    cHTTPParserParent = nil
+    server_project.files.each { |file|
+      if file.path.to_s == 'CHTTPParser.h'
+        cHTTPParserParent = file.parent
+      end
+    }
+
+    if cHTTPParserParent != nil
+#      cHTTPParserParent.new_file('module.modulemap')
+    end
+
+
 end
 
 def fix_client_project(client_project, server_project, headers_path, library_path)
@@ -92,6 +147,7 @@ server_project_file = ARGV[0];
 main_module = ARGV[1];
 client_project_file = ARGV[2];
 number_of_bits = ARGV[3];
+kitura_net_package = ARGV[4];
 
 library_file_path = "../iOSStaticLibraries/Curl/lib/libcurl.a"
 headers_path = "$(PROJECT_DIR)/../iOSStaticLibraries/Curl/include" + "-" + number_of_bits
@@ -101,7 +157,9 @@ kitura_net = "KituraNet"
 server_project = Xcodeproj::Project.open(server_project_file);
 client_project = Xcodeproj::Project.open(client_project_file);
 
-fix_server_project(server_project, main_module, kitura_net, library_file_path, headers_path, library_path)
+server_project_file_basename = File.basename server_project_file
+
+fix_server_project(server_project, main_module, kitura_net, library_file_path, headers_path, library_path, server_project_file_basename, kitura_net_package)
 fix_client_project(client_project, server_project, headers_path, library_path)
 
 server_project.save;

@@ -15,6 +15,11 @@
 # limitations under the License.
 
 MAIN_DOT_SWIFT=`find ServerSide/Sources -name main.swift`
+KITURA_NET_PACKAGE=`basename ServerSide/.build/checkouts/Kitura-net.git*`
+
+cp ServerSide/*.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap ServerSide/.build/checkouts/${KITURA_NET_PACKAGE}/Sources/CHTTPParser/include
+
+
 MAIN_MODULE_DIRECTORY=`dirname ${MAIN_DOT_SWIFT}`
 MAIN_MODULE=`basename ${MAIN_MODULE_DIRECTORY}`
-ruby ${KITURA_IOS_BUILD_SCRIPTS_DIR}/fix_xcode_project.rb ServerSide/*.xcodeproj ${MAIN_MODULE} ClientSide/*.xcodeproj ${1}
+ruby ${KITURA_IOS_BUILD_SCRIPTS_DIR}/fix_xcode_project.rb ServerSide/*.xcodeproj ${MAIN_MODULE} ClientSide/*.xcodeproj ${1} ${KITURA_NET_PACKAGE}
