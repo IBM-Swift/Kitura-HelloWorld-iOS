@@ -19,12 +19,15 @@ import Foundation
 @testable import ClientSide
 
 class KituraViewControllerTests: XCTestCase {
-    var viewController: KituraViewController!
+    var viewController: KituraTableViewController?
 
     override func setUp() {
         super.setUp()
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        viewController = storyboard.instantiateInitialViewController() as! KituraViewController
+        if let rootViewController = storyboard.instantiateInitialViewController() as? UINavigationController {
+            viewController = rootViewController.visibleViewController
+                as? KituraTableViewController
+        }
     }
 
     override func tearDown() {
@@ -33,6 +36,10 @@ class KituraViewControllerTests: XCTestCase {
     }
 
     func testHelloWorldIsReturnedFromServer() {
+        guard let viewController = viewController else {
+            XCTFail("view controller should not be nil")
+            return
+        }
         let _ = viewController.view
         XCTAssertNotNil(viewController.view)
         viewController.kituraSwitch.setOn(true,animated: false)
@@ -50,7 +57,7 @@ class KituraViewControllerTests: XCTestCase {
             }
             XCTAssertNil(error, "error should be nil")
             let stringData = String(data: data, encoding: String.Encoding.utf8)
-            XCTAssertEqual("Hello, World!", stringData)
+            XCTAssertTrue(stringData?.hasPrefix("Hello, World!") ?? false)
             helloExpectation.fulfill()
         }
 
