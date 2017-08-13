@@ -7,4 +7,4 @@
 	url = git@github.com:IBM-Swift/Kitura-Mobile-Server.git
 [submodule "Builder"]
 	path = Builder
-	url = git@github.com:rodedz/Kitura-Builder-iOS.git
+	url = git@github.com:IBM-Swift/Kitura-Builder-iOS.git
