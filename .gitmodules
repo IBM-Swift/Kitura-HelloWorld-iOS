@@ -4,7 +4,7 @@
 	branch = two_modules
 [submodule "Builder"]
 	path = Builder
-	url = git@github.com:IBM-Swift/Kitura-Builder-iOS.git
+	url = https://github.com/IBM-Swift/Kitura-Builder-iOS.git
 [submodule "ClientSide"]
 	path = ClientSide
 	url = https://github.com/IBM-Swift/Kitura-Mobile-Server.git
