@@ -19,8 +19,8 @@ The app demonstrates starting and stopping Kitura server, and presents Kitura lo
 **We tested working with curl 7.43.0 version.**
 
 # Build the project in Xcode
-1. Type `make` in the terminal, an Xcode instance with a workspace will be opened. The workspace will contain both the client-side and the server-side parts as projects.
-You should rerun `make` any time you change the structure of `ServerSide`  - add a file or add a dependency.
+1. Type `make openXcode` in the terminal, an Xcode instance with a workspace will be opened. The workspace will contain both the client-side and the server-side parts as projects.
+You should rerun `make openXcode` any time you change the structure of `ServerSide`  - add a file or add a dependency.
 2. In the opened Xcode workspace, you can edit the code, both the client-side and server-side parts, debug and run the client-side iOS app (`ClientSide`) with the server side embedded in it.
 
 You will see the URL of your Kitura/iOS server in the start screen of the app. Start the server by flipping the switch "STOPPED" on. Use another device (any OS) on the same Wi-Fi network. Point a browser in the other device to the displayed URL, you should get "Hello World!" message with a timestamp as a response. Alternatively, use the QR code displayed beside the URL of the server.
@@ -47,7 +47,7 @@ bash ./Builder/Scripts/buildCurlStaticLibrary.sh curl-7.43.0
 
 For 64Bit (example, iPhone 5s or newer, iPad Air or newer, iPad Mini 2 or newer, iPad Pro or newer)
 ```
-make
+make openXcode
 ```
 
 For 32Bit (example, iPhone 5, 5c, iPad 4)
@@ -65,4 +65,4 @@ make openXcode32
 
 1. `git pull` to get the latest version of Kitura
 2. Remove the `Builder` directory
-3. run `make` or `make openXcode32`
+3. run `make openXcode` or `make openXcode32`
