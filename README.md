@@ -31,7 +31,7 @@ See https://developer.ibm.com/swift/2017/03/13/kitura-ios/
 # Quick Instructions
 (macOS Sierra 10.12.4 and Xcode 8.3.2)
 
-1. Setup (Run in terminal)
+1. Setup (run in a terminal)
 ```
 xcode-select --install
 sudo gem install xcodeproj
