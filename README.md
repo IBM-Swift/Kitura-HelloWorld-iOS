@@ -61,7 +61,7 @@ make openXcode32
 5. On the running app, turn on the toggle switch above the QR code
 6. On another device, connect to the listed URL
 
-# (Upgrade) Quick Instructions
+# Update -  Quick Instructions
 
 1. `git pull` to get the latest version of Kitura
 2. Remove the `Builder` directory
