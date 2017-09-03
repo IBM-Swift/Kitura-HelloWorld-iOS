@@ -1,7 +1,7 @@
 ![Kitura Builder for iOS](https://raw.githubusercontent.com/IBM-Swift/Kitura-Builder-iOS/master/Documentation/KituraIOS.jpg)
 
 # Kitura/iOS Hello World
-
+[![Build Status](https://travis-ci.org/IBM-Swift/Kitura-HelloWorld-iOS.svg?branch=master)](https://travis-ci.org/IBM-Swift/Kitura-HelloWorld-iOS)
 ![macOS](https://img.shields.io/badge/os-macOS-green.svg?style=flat)
 ![iOS](https://img.shields.io/badge/os-iOS-red.svg?style=flat)
 ![Apache 2](https://img.shields.io/badge/license-Apache2-blue.svg?style=flat)
