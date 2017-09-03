@@ -19,3 +19,7 @@ Builder/Makefile:
 	@echo --- Fetching submodules
 	git submodule init
 	git submodule update --remote --merge
+
+test: Builder/Makefile prepareXcode
+	xcodebuild test -workspace EndToEnd.xcworkspace -scheme ClientSide \
+                -destination 'platform=iOS Simulator,OS=10.3.1,name=iPhone 7'
