@@ -5,6 +5,7 @@
 ![macOS](https://img.shields.io/badge/os-macOS-green.svg?style=flat)
 ![iOS](https://img.shields.io/badge/os-iOS-red.svg?style=flat)
 ![Apache 2](https://img.shields.io/badge/license-Apache2-blue.svg?style=flat)
+[![codebeat badge](https://codebeat.co/badges/8a6ec41b-1b25-46f9-8d9d-cbe305f8b8a0)](https://codebeat.co/projects/github-com-ibm-swift-kitura-helloworld-ios-master-0d811d0a-4fc8-4cea-abfd-1af2b0b38d84)
 &nbsp;[![Slack Status](http://swift-at-ibm-slack.mybluemix.net/badge.svg)](http://swift-at-ibm-slack.mybluemix.net/)
 
 Simple Hello World Kitura Application (Server Side) embedded in an iOS app (Client Side).
