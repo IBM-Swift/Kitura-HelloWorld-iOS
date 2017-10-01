@@ -17,5 +17,5 @@
 # Travis CI build file for Kitura Tests on iOS
 # Building Kitura on OS X and running it on iOS, in a simulator
 
-git clone https://github.com/vadimeisenbergibm/Package-Builder.git
+git clone https://github.com/IBM-Swift/Package-Builder.git
 ./Package-Builder/build-package.sh -projectDir $(pwd)
