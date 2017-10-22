@@ -14,8 +14,14 @@
 
 export KITURA_IOS_BUILD_SCRIPTS_DIR=Builder/Scripts
 -include Builder/Makefile
+
+ifeq ($(SWIFT_SNAPSHOT), 3.1.1)
 OS=10.3.1
 DEVICE=iPhone 7
+else
+OS=11.0.1
+DEVICE=iPhone 8
+endif
 
 Builder/Makefile:
 	@echo --- Fetching submodules
