@@ -14,6 +14,8 @@
 
 export KITURA_IOS_BUILD_SCRIPTS_DIR=Builder/Scripts
 -include Builder/Makefile
+OS=10.3.1
+DEVICE=iPhone 7
 
 Builder/Makefile:
 	@echo --- Fetching submodules
@@ -21,5 +23,6 @@ Builder/Makefile:
 	git submodule update --remote --merge
 
 test: Builder/Makefile prepareXcode
+	ruby Builder/Scripts/set_deployment_version.rb ClientSide/ClientSide.xcodeproj ${OS}
 	xcodebuild test -workspace EndToEnd.xcworkspace -scheme ClientSide \
-                -destination 'platform=iOS Simulator,OS=10.3.1,name=iPhone 7'
+                -destination 'platform=iOS Simulator,OS=${OS},name=${DEVICE}'
