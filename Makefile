@@ -29,6 +29,7 @@ Builder/Makefile:
 	git submodule update --remote --merge
 
 test: Builder/Makefile prepareXcode
+	echo SWIFT_SNAPSHOT=${SWIFT_SNAPSHOT}
 	ruby Builder/Scripts/set_deployment_version.rb ClientSide/ClientSide.xcodeproj ${OS}
 	xcodebuild test -workspace EndToEnd.xcworkspace -scheme ClientSide \
                 -destination 'platform=iOS Simulator,OS=${OS},name=${DEVICE}'
