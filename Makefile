@@ -16,13 +16,16 @@ export KITURA_IOS_BUILD_SCRIPTS_DIR=Builder/Scripts
 -include Builder/Makefile
 
 ifeq ($(SWIFT_SNAPSHOT), swift-3.1.1-RELEASE)
-OS=10.3.1
+DEPLOYMENT_OS=10.3
+SIMULATOR_OS=10.3.1
 DEVICE=iPhone 7
 else ifeq ($(SWIFT_SNAPSHOT), swift-4.0-RELEASE)
-OS=11.0
+DEPLOYMENT_OS=11.0
+SIMULATOR_OS=11.0
 DEVICE=iPhone 8
 else
-OS=11.0.1
+DEPLOYMENT_OS=11.0
+SIMULATOR_OS=11.0.1
 DEVICE=iPhone 8
 endif
 
@@ -33,7 +36,7 @@ Builder/Makefile:
 
 test: Builder/Makefile prepareXcode
 	echo SWIFT_SNAPSHOT=${SWIFT_SNAPSHOT}
-	ruby Builder/Scripts/set_deployment_version.rb ClientSide/ClientSide.xcodeproj ${OS}
-	ruby Builder/Scripts/set_deployment_version.rb SharedServerClient/SharedServerClient.xcodeproj ${OS}
+	ruby Builder/Scripts/set_deployment_version.rb ClientSide/ClientSide.xcodeproj ${DEPLOYMENT_OS}
+	ruby Builder/Scripts/set_deployment_version.rb SharedServerClient/SharedServerClient.xcodeproj ${DEPLOYMENT_OS}
 	xcodebuild test -workspace EndToEnd.xcworkspace -scheme ClientSide \
-                -destination 'platform=iOS Simulator,OS=${OS},name=${DEVICE}'
+                -destination 'platform=iOS Simulator,OS=${SIMULATOR_OS},name=${DEVICE}'
