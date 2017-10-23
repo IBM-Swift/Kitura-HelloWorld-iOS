@@ -18,8 +18,11 @@ export KITURA_IOS_BUILD_SCRIPTS_DIR=Builder/Scripts
 ifeq ($(SWIFT_SNAPSHOT), swift-3.1.1-RELEASE)
 OS=10.3.1
 DEVICE=iPhone 7
-else
+else ifeq ($(SWIFT_SNAPSHOT), swift-4.0-RELEASE)
 OS=11.0
+DEVICE=iPhone 8
+else
+OS=11.0.1
 DEVICE=iPhone 8
 endif
 
