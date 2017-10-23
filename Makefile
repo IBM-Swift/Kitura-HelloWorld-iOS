@@ -31,5 +31,6 @@ Builder/Makefile:
 test: Builder/Makefile prepareXcode
 	echo SWIFT_SNAPSHOT=${SWIFT_SNAPSHOT}
 	ruby Builder/Scripts/set_deployment_version.rb ClientSide/ClientSide.xcodeproj ${OS}
+	ruby Builder/Scripts/set_deployment_version.rb SharedServerClient/SharedServerClient.xcodeproj ${OS}
 	xcodebuild test -workspace EndToEnd.xcworkspace -scheme ClientSide \
                 -destination 'platform=iOS Simulator,OS=${OS},name=${DEVICE}'
