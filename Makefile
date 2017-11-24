@@ -13,6 +13,7 @@
 # limitations under the License.
 
 export KITURA_IOS_BUILD_SCRIPTS_DIR=Builder/Scripts
+# initial "-" prevents initial error message, when Builder submodule is not yet fetched
 -include Builder/Makefile
 
 ifeq ($(SWIFT_SNAPSHOT), swift-3.1.1-RELEASE)
