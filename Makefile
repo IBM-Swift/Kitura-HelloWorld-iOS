@@ -30,9 +30,13 @@ Builder/Makefile:
 	@echo --- Fetching submodules
 	git submodule init
 	git submodule update --remote --merge
+	make setDeploymentVersionOfSharedServerClient
+
+setDeploymentVersionOfSharedServerClient:
 	ruby Builder/Scripts/set_deployment_version.rb SharedServerClient/SharedServerClient.xcodeproj ${DEPLOYMENT_OS}
 
-test: Builder/Makefile ServerSide/Package.swift prepareXcode
+test: Builder/Makefile ServerSide/Package.swift prepareXcode \
+ setDeploymentVersionOfSharedServerClient
 	echo SWIFT_SNAPSHOT=${SWIFT_SNAPSHOT}
 	xcodebuild test -workspace EndToEnd.xcworkspace -scheme ClientSide \
                 -destination 'platform=iOS Simulator,OS=${SIMULATOR_OS},name=${DEVICE}'
