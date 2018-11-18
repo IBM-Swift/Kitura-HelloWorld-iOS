@@ -12,7 +12,8 @@ Simple Hello World Kitura Application (Server Side) embedded in an iOS app (Clie
 The app demonstrates starting and stopping Kitura server, and presents Kitura log on the screen.
 
 # Publications
-See https://developer.ibm.com/swift/2017/03/13/kitura-ios/
+* https://developer.ibm.com/swift/2017/03/13/kitura-ios/
+* https://developer.ibm.com/swift/2017/12/08/kitura-ios-part2/
 
 # Quick Instructions
 (Last tested on macOS Mojave 10.14 and Xcode 10.1)
