@@ -57,3 +57,6 @@ make openXcode32
 1. `git pull` to get the latest version of Kitura
 2. Remove the `Builder` directory
 3. run `make openXcode` or `make openXcode32`
+
+# Command Line Tests
+Run `make test`
